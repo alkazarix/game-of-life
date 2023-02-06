@@ -2,6 +2,15 @@
 
 rust + typescript implementation of [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
+
+#### requirement
+
+- rust tool chain, including `rustup`, `rustc`, and `cargo`. installation instruction [here](https://www.rust-lang.org/tools/install)
+
+- `wasm-pack`, for building, testing, and publishing Rust WebAssembly. installation instruction [here](https://rustwasm.github.io/wasm-pack/installer/) 
+
+- `nodejs` with `npm`, we will use it to install and run a JavaScript bundler and development server.
+
 #### projet structure
 
 Let take a look at the project contents:
@@ -86,7 +95,7 @@ Next step, it is to build the `wwww` web project via `webpack`.
 
 Inside the `wwww` directory, install the dependencies first.
 ```
-npm install
+npm install --dev
 ```
 
 Then build the project.
